@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>The Aggarwal Family
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <span id="x">
+            <img id="slides" src="1.png">
+            <button type="button" id="next" onclick="next()">Next</button>
+        </span>
+          
+    </body>
+    <script>   
+    var slides = [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+    ];
+
+    var i = 0
+    function next() {
+
+        if ( i == 5){
+            i = 0;
+        }
+
+        document.getElementById("slides").src = slides[i];
+        i++
+    };
+    </script>
+</html>
